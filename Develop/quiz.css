@@ -1,0 +1,71 @@
+/* css styles that assist the ids and classes being referenced
+*  in the html elements and javascript selectors
+*/
+body {
+    background-image: url("Assets/Triangles.jpg");
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.para {
+    margin-top: 25px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.col-sm-12 {
+    padding: 5px;
+}
+
+.answer {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: rgb(84, 147, 219);
+    width: 80%;
+    font-weight: bold;
+    font-size: large;
+    border-block-end-style: groove;
+    padding: 15px;
+}
+
+.container {
+    padding: 20px;
+    font-family: 'Caladea', serif;
+}
+
+#count {
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgb(41, 9, 9);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#finishQuiz {
+    margin-top: 25px;
+}
+
+#quizContent {
+    margin-top: 50px;
+    font-size: x-large;
+    font-weight: bold;
+    color: indigo;
+}
+
+.output {
+    font-size: 20px;
+}

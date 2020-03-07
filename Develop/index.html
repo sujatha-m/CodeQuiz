@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Quiz Assignment</title>
+    <!-- Bootstrap dependency links -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+        crossorigin="anonymous">
+    <!-- Google font link -->
+    <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
+    <!-- embedded css styles -->
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+
+<body>
+    <!-- Quiz container window -->
+    <div class="container text-center">
+        <h1 id="title">Coding Quiz Challenge</h1><br>
+        <p class="para">Try to answer the following code-related questions within the time limit.<br>
+            Keep in mind that incorrect answers will penalize score by 10 seconds
+        </p>
+        <div id="quizContent" class="row quiz">
+            <div class="col-sm-12">
+                <h2 id="quizHeader"></h2>
+            </div>
+            <!-- question and answer choices displayed in the window,hidden by default
+      activated when user clicks start button after loading the 1st question -->
+            <div id="questions" class="row">
+                <div class="col-sm-12"> <a data-id="1" class="btn btn-default hide answer">1</a> </div>
+                <div class="col-sm-12"> <a data-id="2" class="btn btn-default hide answer">2</a> </div>
+                <div class="col-sm-12"> <a data-id="3" class="btn btn-default hide answer">3</a> </div>
+                <div class="col-sm-12"> <a data-id="4" class="btn btn-default hide answer">4</a> </div>
+            </div>
+            <span id="count"></span> <!-- Timer element -->
+            <div class="row text-center">
+                <!-- Start Quiz Button  -->
+                <div id="startQuiz" class=" btn btn-primary btn-lg ">Start Quiz</div>
+                <span id="remark"></span> <!-- Displays the answer result "Correct" or "wrong" -->
+            </div>
+        </div>
+
+        <!-- Form that prompts for user name at the end of quiz -->
+        <div id="finalize" class="card hide">
+            <form method="POST">
+                <div class="form-group mx-sm-4 mb-3">
+                    <label for="Your Name : ">Your Name :</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Jane" />
+                </div>
+                <!-- Form submit button -->
+                <button id="submit" class=" btn btn-primary mb-2">Submit</button>
+                <div id="msg"></div>
+            </form>
+        </div>
+
+        <!-- composite element that holds the High scores banner,goback and clearhigh scores 
+       button at the end of the quiz -->
+        <div id="table" class="card hide">
+            <h2 id="hs">High Scores:</h2>
+            <p><strong></strong> <span id="user-name"></span></p>
+            <button id="goback" class=" btn btn-primary btn-lg ">Go Back</button>
+            <button id="clear" class=" btn btn-primary btn-lg ">Clear Highscores</button>
+        </div>
+    </div>
+    </div>
+    <script src="quiz.js"></script> <!-- embedded java script -->
+</body>
+
+</html>
