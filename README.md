@@ -1,5 +1,8 @@
 # CodeQuiz
 
+**Deployed Web URL**
+https://sujatha-m.github.io/CodeQuiz/Develop/
+
 ## Overview 
 A timed code quiz application with multiple-choice questions and answers presented to the user.
 Every incorrect answer decrements the timer by 10.The final score is determined by the remaining time at 
